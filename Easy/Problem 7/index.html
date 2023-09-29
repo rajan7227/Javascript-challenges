@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        border: 10px solid grey;
+        padding: 2rem;
+      }
+      /* Style for the h1 element */
+      h1 {
+        color: #333; /* Text color */
+        font-family: Arial, sans-serif; /* Font family */
+        font-size: 24px; /* Font size */
+        text-align: center; /* Text alignment */
+      }
+
+      /* Style for the p element */
+      p {
+        color: #666; /* Text color */
+        font-family: Arial, sans-serif; /* Font family */
+        font-size: 16px; /* Font size */
+        line-height: 1.5; /* Line spacing */
+        max-width: 80%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JAVASCRIPT PROBLEM</h1>
+    <p>
+      In this lab, you will work with the Fetch API to retrieve some data from a
+      provided URL and then display it on the web page. You will create a button
+      to trigger the fetch request and a container to display the retrieved
+      data. Moreover, you will also handle any errors encountered while fetching
+      the data. Important Concepts: The Fetch API provides a JavaScript
+      interface for fetching resources across the network. The fetch() function
+      returns a Promise that resolves to the Response object representing the
+      response to the request. To extract the JSON data from the response, you
+      can use the response.json() method, which also returns a Promise. Promises
+      can be chained using 'then' and 'catch' methods. Remember to handle errors
+      that may arise during the fetching process.
+    </p>
+    <p>
+      Create a button with id 'fetchBtn' and a container with id 'dataContainer'
+      to display fetched data. Attach a click event handler to the button and
+      fetch data from the given URL:
+      'https://jsonplaceholder.typicode.com/posts/1'. Parse the fetched data as
+      JSON and display the 'title' property in the 'dataContainer' as a heading
+      (h3). Handle errors in the fetch request and display an error message
+      inside the 'dataContainer'.
+    </p>
+    <hr />
+    <hr />
+
+    <div>
+      <button id="fetchBtn">Fetch</button>
+      <h3 id="dataContainer">	</h3>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
