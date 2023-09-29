@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        border: 10px solid grey;
+        padding: 2rem;
+      }
+      /* Style for the h1 element */
+      h1 {
+        color: #333; /* Text color */
+        font-family: Arial, sans-serif; /* Font family */
+        font-size: 24px; /* Font size */
+        text-align: center; /* Text alignment */
+      }
+
+      /* Style for the p element */
+      p {
+        color: #666; /* Text color */
+        font-family: Arial, sans-serif; /* Font family */
+        font-size: 16px; /* Font size */
+        line-height: 1.5; /* Line spacing */
+        max-width: 80%;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JAVASCRIPT PROBLEM</h1>
+    <p>
+      Your task for this lab is to create a separate Mute Button which will mute
+      / unmute the video. To display a video on your webpage, use the video tag
+      with the appropriate attributes.
+    </p>
+    <p>
+      Create a video tag with the id 'video' and provide a source src with the
+      video URL
+      'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4'
+      and add the 'controls' attribute Create a button with id 'muteButton' and
+      text 'Mute/Unmute'.
+    </p>
+    <hr />
+    <hr />
+
+    <div>
+     <video id="video" width="350px" controls muted>
+      <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+     </video>
+     <br/>
+      <button id="muteButton">Mute</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
